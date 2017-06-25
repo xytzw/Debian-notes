@@ -1,0 +1,11 @@
+STEPS TO MAKE NETWORK WIDGET FOR CONNMAN in LXQT
+
+git clone https://github.com/lxde/lxqt-connman-applet.git
+sudo apt-get install lxqt-config-l10n lxqt-core liblxqt0-dev libkf5windowsystem-dev
+sudo apt-get install qtbase5-private-dev libqt5svg5-dev qttools5-dev-tools libqt5x11extras5-dev
+makedir ~/lxqt-connman-applet/build
+cd ~/lxqt-connman-applet/build
+cmake ~/lxqt-connman-applet/
+cd ~/lxqt-connman-applet/
+make
+sudo make install
